@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Member.Application_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Member.Domain\Member.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Reponsitories\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interface\" />
+    <None Remove="Reponsitories\Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reponsitories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Reponsitories\Interface\" />
+  </ItemGroup>
+</Project>
