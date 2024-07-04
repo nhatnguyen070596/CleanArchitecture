@@ -1,0 +1,16 @@
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/bin/Debug/net7.0/Member.Application.deps.json
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/bin/Debug/net7.0/Member.Application.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/bin/Debug/net7.0/Member.Application.pdb
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/bin/Debug/net7.0/Member.Domain.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/bin/Debug/net7.0/Member.Domain.pdb
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.csproj.AssemblyReference.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.AssemblyInfoInputs.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.AssemblyInfo.cs
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.sourcelink.json
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.csproj.CopyComplete
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/refint/Member.Application.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/Member.Application.pdb
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/Debug/net7.0/ref/Member.Application.dll
