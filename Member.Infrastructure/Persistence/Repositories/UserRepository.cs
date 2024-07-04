@@ -1,7 +1,10 @@
 ﻿using System;
 using AutoMapper;
-using Member.Application_.Reponsitories.Interface;
 using Member.Domain.DTOs;
+using Member.Domain.Entities;
+using Member.Domain.Exceptions;
+using Member.Domain.Utils;
+using Member.Application_.Reponsitories.Interface;
 using Member.Infrastructure.Persistence.Contexts;
 
 namespace Member.Infrastructure.Persistence.Repositories
@@ -16,29 +19,64 @@ namespace Member.Infrastructure.Persistence.Repositories
             this.mapper = mapper;
         }
 
-        public User.UserResponse CreateUser(User.CreateUserRequest request)
+        public UserResponse CreateUser(CreateUserRequest request)
         {
-            throw new NotImplementedException();
+            var user = this.mapper.Map<User>(request);
+            user.CreatedAt = user.UpdatedAt = DateUtil.GetCurrentDate();
+
+            this.storeContext.Users.Add(user);
+            this.storeContext.SaveChanges();
+
+            return this.mapper.Map<UserResponse>(user);
         }
 
         public void DeleteUserById(int userId)
         {
-            throw new NotImplementedException();
+            var user = this.storeContext.Users.Find(userId);
+            if (user != null)
+            {
+                this.storeContext.Users.Remove(user);
+                this.storeContext.SaveChanges();
+            }
+            else
+            {
+                throw new NotFoundException();
+            }
         }
 
-        public User.UserResponse GetUserById(int userId)
+        public UserResponse GetUserById(int userId)
         {
-            throw new NotImplementedException();
+            var user = this.storeContext.Users.Find(userId);
+            if (user != null)
+            {
+                return this.mapper.Map<UserResponse>(user);
+            }
+
+            throw new NotFoundException();
         }
 
-        public List<User.UserResponse> GetUsers()
+        public List<UserResponse> GetUsers()
         {
-            throw new NotImplementedException();
+            return this.storeContext.Users.Select(u => this.mapper.Map<UserResponse>(u)).ToList();
         }
 
-        public User.UserResponse UpdateUser(int userId, User.UpdateUserRequest request)
+        public UserResponse UpdateUser(int userId, UpdateUserRequest request)
         {
-            throw new NotImplementedException();
+            var user = this.storeContext.Users.Find(userId);
+            if (user != null)
+            {
+                user.FullName = request.Fullname;
+                user.Description = request.Description;
+                user.IsActive = request.IsActive;
+                user.UpdatedAt = DateUtil.GetCurrentDate();
+
+                this.storeContext.Users.Update(user);
+                this.storeContext.SaveChanges();
+
+                return this.mapper.Map<UserResponse>(user);
+            }
+
+            throw new NotFoundException();
         }
     }
 }

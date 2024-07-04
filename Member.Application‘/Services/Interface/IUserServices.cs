@@ -1,6 +1,5 @@
 ﻿using System;
 using Member.Domain.DTOs;
-using static Member.Domain.DTOs.User;
 
 namespace Member.Application_.Services.Interface
 {

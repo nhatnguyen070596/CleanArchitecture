@@ -23,6 +23,10 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+});
 
 builder.Services.AddAuthentication(options =>
 {

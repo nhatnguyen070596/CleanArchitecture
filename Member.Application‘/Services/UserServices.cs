@@ -3,6 +3,7 @@ using System;
 using Member.Application_.Reponsitories.Interface;
 using Member.Application_.Services.Interface;
 using Member.Domain.DTOs;
+using Member.Domain.Entities;
 
 namespace Member.Application_.Services
 {
@@ -16,29 +17,29 @@ namespace Member.Application_.Services
 
         }
 
-        public User.UserResponse GetUserById(int userId)
+        public UserResponse CreateUser(CreateUserRequest request)
         {
-            throw new NotImplementedException();
+            return this.userRepository.CreateUser(request);
         }
 
-        User.UserResponse IUserServices.CreateUser(User.CreateUserRequest request)
+        public void DeleteUserById(int userId)
         {
-            throw new NotImplementedException();
+            this.userRepository.DeleteUserById(userId);
         }
 
-        void IUserServices.DeleteUserById(int userId)
+        public UserResponse GetUserById(int userId)
         {
-            throw new NotImplementedException();
+            return this.userRepository.GetUserById(userId);
         }
 
-        List<User.UserResponse> IUserServices.GetUsers()
+        public List<UserResponse> GetUsers()
         {
-            throw new NotImplementedException();
+            return this.userRepository.GetUsers();
         }
 
-        User.UserResponse IUserServices.UpdateUser(int userId, User.UpdateUserRequest request)
+        public UserResponse UpdateUser(int userId, UpdateUserRequest request)
         {
-            throw new NotImplementedException();
+            return this.userRepository.UpdateUser(userId, request);
         }
     }
 }

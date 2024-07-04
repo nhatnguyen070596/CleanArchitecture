@@ -6,7 +6,6 @@ using Member.Application_.Services.Interface;
 using Member.Domain.DTOs;
 using Member.Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;
-using static Member.Domain.DTOs.User;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

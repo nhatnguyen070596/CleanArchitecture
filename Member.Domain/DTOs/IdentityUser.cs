@@ -8,11 +8,13 @@ namespace Member.Domain.DTOs
         public class LoginModel
         {
             [Required]
-            public string Password { get; set; }
-
-            [Required]
             [StringLength(30, MinimumLength = 3)]
             public string UserName { get; set; }
+
+            [Required]
+            public string Password { get; set; }
+
+
 
         }
         public class CreateIdentityUserModel
