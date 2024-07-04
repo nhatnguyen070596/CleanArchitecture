@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "81iDG0OJovk2jfKzyzwblD/W+n6tGSTxI87tq7x/2P/oY+sX44YCKmbG8Z5ml41bsrSXP1fOHKfdNY6h+wXwVQ==",
+  "dgSpecHash": "rg0BhpeUEJdgErxneMP2H966pLafNItUoTGMD63PCYuCntIk43wv0nQxZ8M6KLgYJjN3YIWLpExOXyclrCnUFg==",
   "success": true,
   "projectFilePath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.UnitTests/Member.UnitTests.csproj",
   "expectedPackageFiles": [

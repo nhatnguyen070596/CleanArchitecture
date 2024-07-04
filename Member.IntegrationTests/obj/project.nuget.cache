@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "urWXEkEGateLh9VZYZnXnMJnEBA0WaIej2HpFG8YgSZqH3lKeRuj4onc4Rn6Efvm0I4Jn4CCpITMhzPuDSVBNA==",
+  "dgSpecHash": "eyi3lVBizlhw3HqkGpjbJPP0fBe3j736IcZiwSr/t9ovNaVEyCzcXdumKsADvJfysOn8XLpl49NM8hj0ly+QiA==",
   "success": true,
   "projectFilePath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/Member.IntegrationTests.csproj",
   "expectedPackageFiles": [

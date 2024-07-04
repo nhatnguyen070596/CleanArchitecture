@@ -1,0 +1,13 @@
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/bin/Debug/net8.0/Member.Domain.deps.json
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/bin/Debug/net8.0/Member.Domain.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/bin/Debug/net8.0/Member.Domain.pdb
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.csproj.AssemblyReference.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.AssemblyInfoInputs.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.AssemblyInfo.cs
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.sourcelink.json
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/refint/Member.Domain.dll
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/Member.Domain.pdb
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/Debug/net8.0/ref/Member.Domain.dll

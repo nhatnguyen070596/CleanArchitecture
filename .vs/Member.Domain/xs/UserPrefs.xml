@@ -1,8 +1,16 @@
 ﻿<Properties StartupConfiguration="{5358C32A-8ACD-4591-A61E-1EC43FE76A16}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Member.Infrastructure/Persistence/Contexts/StoreContext.cs">
+  <DisabledProjects>
+    <String>Member.UnitTest/Member. IntegrationTests/Member. IntegrationTests.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Source.Member.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../usr/local/share/dotnet/sdk/8.0.101/Microsoft.Common.CurrentVersion.targets">
     <Files>
-      <File FileName="Member.API/Program.cs" Line="39" Column="59" />
-      <File FileName="Member.API/appsettings.json" Line="20" Column="1" />
+      <File FileName="Member.API/Program.cs" Line="84" Column="1" />
+      <File FileName="Member.API/appsettings.json" />
       <File FileName="Member.Infrastructure/DependencyInjection.cs" />
       <File FileName="Member.Domain/Mappings/GeneralProfile.cs" />
       <File FileName="Member.Domain/Exceptions/NotFoundException.cs" />
@@ -21,7 +29,7 @@
       <File FileName="Member.UnitTests/Utils/BaseTest.cs" />
       <File FileName="Member.UnitTests/Utils/ProductRequestTests.cs" />
       <File FileName="Member.UnitTests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-      <File FileName="Member.IntegrationTests/SharedDatabaseFixture.cs" Line="1" Column="1" />
+      <File FileName="Member.IntegrationTests/SharedDatabaseFixture.cs" />
       <File FileName="Member.IntegrationTests/Repositories/ProductRepositoryTests.cs" />
       <File FileName="Member.Domain/DTOs/Product.cs" />
       <File FileName="Member.Domain/Entities/Product.cs" />
@@ -33,18 +41,23 @@
       <File FileName="Member.API/Controllers/UserController.cs" />
       <File FileName="Member.Infrastructure/Persistence/Repositories/UserRepository.cs" />
       <File FileName="Member.Application‘/Reponsitories/Interface/IUserRepository.cs" />
-      <File FileName="Member.Application‘/Services/UserServices.cs" Line="13" Column="30" />
+      <File FileName="Member.Application‘/Services/UserServices.cs" Line="1" Column="1" />
       <File FileName="Member.Application‘/Services/Interface/IUserServices.cs" />
       <File FileName="Member.Infrastructure/Migrations/20240702080614_initial1.cs" />
       <File FileName="Member.Infrastructure/Migrations/20240702080614_initial1.Designer.cs" />
-      <File FileName="Member.Application‘/Services/ProductServices.cs" />
+      <File FileName="Member.Application‘/Services/ProductServices.cs" Line="16" Column="45" />
       <File FileName="Member.API/Member.API.csproj" />
       <File FileName="Member.Infrastructure/Member.Infrastructure.csproj" />
-      <File FileName="Member.Domain/Identity/AppUser.cs" />
-      <File FileName="../../../../usr/local/share/dotnet/sdk/8.0.101/Microsoft.Common.CurrentVersion.targets" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/8.0.101/Microsoft.Common.CurrentVersion.targets" Line="1860" Column="5" />
       <File FileName="Member.Infrastructure/Persistence/Repositories/ProductRepository.cs" />
-      <File FileName="Member.Infrastructure/Persistence/Contexts/StoreContext.cs" Line="24" Column="1" />
-      <File FileName="Member.API/Controllers/AccountController.cs" Line="71" Column="2" />
+      <File FileName="Member.Infrastructure/Persistence/Contexts/StoreContext.cs" />
+      <File FileName="Member.API/Controllers/AccountController.cs" />
+      <File FileName="Member.Domain/DependencyInjection.cs" />
+      <File FileName="Member.Domain/DTOs/IdentityUser.cs" Line="17" Column="1" />
+      <File FileName="Member.API/Helper/SeedUserAdmin.cs" />
+      <File FileName="Member.Application‘/Services/TokenService.cs" Line="10" Column="2" />
+      <File FileName="Member.Application‘/Services/Interface/ITokenServices.cs" />
+      <File FileName="Member.Application‘/Member.Application.csproj" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -52,16 +65,20 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="Member.Domain">
             <Node name="Source" expanded="True">
-              <Node name="Member.API" expanded="True">
-                <Node name="Controllers" expanded="True" />
-              </Node>
-              <Node name="Member.Application" expanded="True" />
-              <Node name="Member.Domain" selected="True" />
-              <Node name="Member.Infrastructure" expanded="True">
-                <Node name="Persistence" expanded="True">
-                  <Node name="Contexts" expanded="True" />
-                  <Node name="Repositories" expanded="True" />
+              <Node name="Member.API" expanded="True" />
+              <Node name="Member.Application" selected="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
                 </Node>
+                <Node name="Services" expanded="True" />
+              </Node>
+              <Node name="Member.Domain">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+                <Node name="DTOs" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -69,16 +86,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Member.Domain">
-            <Node name="Test">
-              <Node name="Member.IntegrationTests">
-                <Node name="Member.IntegrationTests.Repositories">
-                  <Node name="ProductRepositoryTests" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Member.UnitTests" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="Member.Domain" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -86,13 +94,5 @@
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects" />
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>Member.UnitTest/Member. IntegrationTests/Member. IntegrationTests.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Source.Member.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

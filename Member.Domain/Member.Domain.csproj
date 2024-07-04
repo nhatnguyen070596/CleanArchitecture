@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -19,7 +19,6 @@
     <None Remove="Mappings\" />
     <None Remove="Utils\" />
     <None Remove="Exceptions\" />
-    <None Remove="Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -27,6 +26,5 @@
     <Folder Include="Mappings\" />
     <Folder Include="Utils\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Identity\" />
   </ItemGroup>
 </Project>

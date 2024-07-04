@@ -19,12 +19,7 @@ namespace Member.Infrastructure
             services.AddDbContext<StoreContext>(options =>
                options.UseSqlServer(defaultConnectionString));
             services.AddAuthorization();
-            //services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<StoreContext>().AddDefaultTokenProviders();
-
-            services.AddIdentityApiEndpoints<IdentityUser>()
-            .AddDefaultUI()
-            .AddEntityFrameworkStores<StoreContext>()
-            .AddDefaultTokenProviders();
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<StoreContext>().AddDefaultTokenProviders();
             services.Configure<IdentityOptions>(options =>
             {
                 // default lockout setting
