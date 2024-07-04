@@ -10,6 +10,7 @@
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.AssemblyInfoInputs.cache
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.AssemblyInfo.cs
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.sourcelink.json
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.csproj.CopyComplete
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/Member.Infrastructure.dll
 /Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/Debug/net7.0/refint/Member.Infrastructure.dll

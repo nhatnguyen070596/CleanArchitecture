@@ -1,0 +1,296 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/Member.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/Member.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/Member.Application.csproj",
+        "projectName": "Member.Application",
+        "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/Member.Application.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj",
+        "projectName": "Member.Domain",
+        "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/Member.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/Member.Infrastructure.csproj",
+        "projectName": "Member.Infrastructure",
+        "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/Member.Infrastructure.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/Member.Application.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Application‘/Member.Application.csproj"
+              },
+              "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/Member.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/Member.IntegrationTests.csproj",
+        "projectName": "Member.IntegrationTests",
+        "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/Member.IntegrationTests.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.IntegrationTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Domain/Member.Domain.csproj"
+              },
+              "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/Member.Infrastructure.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/Member.Domain/Member.Infrastructure/Member.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

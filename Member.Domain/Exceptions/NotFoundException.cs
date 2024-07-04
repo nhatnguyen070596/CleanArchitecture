@@ -3,6 +3,7 @@ namespace Member.Domain.Exceptions
 {
     public class NotFoundException : Exception
     {
+
     }
 }
 

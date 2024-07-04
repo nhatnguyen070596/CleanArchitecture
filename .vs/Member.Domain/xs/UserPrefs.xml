@@ -1,50 +1,67 @@
 ﻿<Properties StartupConfiguration="{5358C32A-8ACD-4591-A61E-1EC43FE76A16}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Member.Infrastructure/DependencyInjection.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nhatnguyenminh/Projects/Member.Domain/Member.API/Controllers/IdentityController.cs" relfile="Member.API/Controllers/IdentityController.cs" line="46" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects" />
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Member.API/Controllers/UserController.cs">
     <Files>
-      <File FileName="Member.API/Program.cs" Line="14" Column="36" />
-      <File FileName="Member.API/WeatherForecast.cs" />
-      <File FileName="Member.API/appsettings.json" Line="13" Column="1" />
-      <File FileName="Member.Infrastructure/DependencyInjection.cs" Line="14" Column="95" />
-      <File FileName="Member.Domain/DependencyInjection.cs" Line="1" Column="1" />
-      <File FileName="Member.Domain/Entities/Product.cs" Line="18" Column="34" />
-      <File FileName="Member.Domain/Mappings/GeneralProfile.cs" Line="13" Column="47" />
-      <File FileName="Member.Domain/Utils/DateUtil.cs" />
-      <File FileName="Member.Domain/Exceptions/NotFoundException.cs" />
-      <File FileName="Member.Infrastructure/Persistence/Contexts/StoreContext.cs" Line="7" Column="18" />
-      <File FileName="Member.Infrastructure/Persistence/Repositories/ProductRepository.cs" Line="77" Column="34" />
-      <File FileName="Member.Application‘/Services/Interface/IProductServices.cs" Line="1" Column="1" />
-      <File FileName="Member.Application‘/Services/ProductServices.cs" Line="31" Column="1" />
-      <File FileName="Member.API/Controllers/ProductsController.cs" Line="14" Column="51" />
-      <File FileName="Member.Application‘/Reponsitories/Interface/IProductRepository.cs" Line="1" Column="1" />
-      <File FileName="Member.Domain/DTOs/Product.cs" Line="27" Column="18" />
+      <File FileName="Member.API/Controllers/AccountController.cs" Line="21" Column="68" />
+      <File FileName="Member.API/Controllers/ProductsController.cs" Line="23" Column="10" />
+      <File FileName="Member.API/appsettings.json" Line="16" Column="18" />
+      <File FileName="Member.API/Program.cs" Line="43" Column="4" />
+      <File FileName="Member.API/Controllers/UserController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Member.Domain" expanded="True">
-            <Node name="Member.API">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="Member.Domain" expanded="True">
-              <Node name="DTOs" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Mappings" expanded="True" />
-              <Node name="Utils" expanded="True" />
-            </Node>
-            <Node name="Member.Infrastructure">
-              <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True" />
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Member.Domain">
+            <Node name="Source" expanded="True">
+              <Node name="Member.API">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Controllers">
+                  <Node name="UserController.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="DependencyInjection.cs" selected="True" />
+              <Node name="Member.Domain">
+                <Node name="DTOs" expanded="True" />
+              </Node>
+              <Node name="Member.Infrastructure">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Contexts" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Test">
+              <Node name="Member.IntegrationTests">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Member.UnitTests" expanded="True">
+                <Node name="Utils" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Member.Domain" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Member.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Member.UnitTest/Member. IntegrationTests/Member. IntegrationTests.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.Source.Member.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

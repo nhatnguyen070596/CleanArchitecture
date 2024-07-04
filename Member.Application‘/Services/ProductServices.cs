@@ -1,4 +1,5 @@
 ﻿using System;
+using Member.Application_.Reponsitories.Interface;
 using Member.Application_.Services.Interface;
 using Member.Domain.DTOs;
 using Member.Domain.Entities;
@@ -9,9 +10,11 @@ namespace Member.Application_.Services
     {
         //Implement Bussiness Rule / USE CASES
         private readonly IProductRepository productRepository;
-        public ProductServices(IProductRepository productRepository)
+        private readonly IUserRepository userRepository;
+        public ProductServices(IProductRepository productRepository, IUserRepository userRepository)
         {
             this.productRepository = productRepository;
+            this.userRepository = userRepository;
         }
 
         public ProductResponse CreateProduct(CreateProductRequest request)

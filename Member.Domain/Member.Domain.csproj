@@ -16,6 +16,7 @@
     <None Remove="Mappings\" />
     <None Remove="Utils\" />
     <None Remove="Exceptions\" />
+    <None Remove="Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -23,5 +24,6 @@
     <Folder Include="Mappings\" />
     <Folder Include="Utils\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="Identity\" />
   </ItemGroup>
 </Project>

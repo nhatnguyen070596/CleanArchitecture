@@ -11,7 +11,6 @@ namespace Member.Domain.Entities
 
         [MaxLength(30)]
         public string Name { get; set; }
-
         public string Description { get; set; }
         public int Stock { get; set; }
         public double Price { get; set; }
