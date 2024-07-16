@@ -50,7 +50,7 @@ namespace Member.IntegrationTests
                         context.Database.EnsureDeleted();
                         context.Database.EnsureCreated();
 
-                        SeedData(context);
+                        SeedData(context); 
                     }
 
                     _databaseInitialized = true;
@@ -61,20 +61,50 @@ namespace Member.IntegrationTests
         private void SeedData(StoreContext context)
         {
             var productIds = 1;
-            var fakeProducts = new Faker<Product>()
+            var userIds = 1;
+            int totalProducts = 10;
+         
+            var productFakerList = GenerateProducts(totalProducts,5, productIds);
+            context.AddRange(productFakerList);
+            context.SaveChanges();
+            var userFakerList = GenerateUser(10, userIds);
+            context.AddRange(userFakerList);
+            context.SaveChanges();
+        }
+        private static List<User> GenerateUser(int count, int userIds)
+        {
+            var fakeUsers = new Faker<User>()
+                           .RuleFor(o => o.FullName, f => $"User FullName {userIds}")
+                           .RuleFor(o => o.Description, f => $"Description {userIds}")
+                           .RuleFor(o => o.Id, f => userIds++)
+                           .RuleFor(o => o.IsActive, f => true)
+                           .RuleFor(o => o.CreatedAt, f => DateUtil.GetCurrentDate())
+                           .RuleFor(o => o.UpdatedAt, f => DateUtil.GetCurrentDate());
+
+            return fakeUsers.Generate(count);
+
+        }
+        private static List<Product> GenerateProducts(int count,int QuantityProductGreaterThanFive, int productIds)
+        {
+            var fakerProductsWithQuantityGreaterThanFive = new Faker<Product>()
                 .RuleFor(o => o.Name, f => $"Product {productIds}")
                 .RuleFor(o => o.Description, f => $"Description {productIds}")
                 .RuleFor(o => o.Id, f => productIds++)
-                .RuleFor(o => o.Stock, f => f.Random.Number(1, 50))
+                .RuleFor(o => o.Stock, f => f.Random.Number(0, 5))
                 .RuleFor(o => o.Price, f => f.Random.Double(0.01, 100))
                 .RuleFor(o => o.CreatedAt, f => DateUtil.GetCurrentDate())
-                .RuleFor(o => o.UpdatedAt, f => DateUtil.GetCurrentDate());
+                .RuleFor(o => o.UpdatedAt, f => DateUtil.GetCurrentDate()).Generate(QuantityProductGreaterThanFive);
 
-            var products = fakeProducts.Generate(10);
+            var fakerProductsWithQuantityLowerThanFive = new Faker<Product>()
+               .RuleFor(o => o.Name, f => $"Product {productIds}")
+               .RuleFor(o => o.Description, f => $"Description {productIds}")
+               .RuleFor(o => o.Id, f => productIds++)
+               .RuleFor(o => o.Stock, f => f.Random.Number(6, 10))
+               .RuleFor(o => o.Price, f => f.Random.Double(0.01, 100))
+               .RuleFor(o => o.CreatedAt, f => DateUtil.GetCurrentDate())
+               .RuleFor(o => o.UpdatedAt, f => DateUtil.GetCurrentDate()).Generate(count - QuantityProductGreaterThanFive);
 
-            context.AddRange(products);
-
-            context.SaveChanges();
+            return fakerProductsWithQuantityGreaterThanFive.Concat(fakerProductsWithQuantityLowerThanFive).ToList();
         }
 
         public void Dispose() => Connection.Dispose();

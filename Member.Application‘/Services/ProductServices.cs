@@ -37,6 +37,11 @@ namespace Member.Application_.Services
             return this.productRepository.GetProducts();
         }
 
+        public List<ProductResponse> ProductsWithQuantityGreaterThanFive()
+        {
+            return this.productRepository.ProductsWithQuantityGreaterThanFive();
+        }
+
         public ProductResponse UpdateProduct(int productId, UpdateProductRequest request)
         {
             return this.productRepository.UpdateProduct(productId, request);

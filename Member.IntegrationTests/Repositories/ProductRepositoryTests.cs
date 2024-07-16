@@ -183,6 +183,20 @@ namespace Member.IntegrationTests.Repositories
                 Assert.Throws<NotFoundException>(action);
             }
         }
+
+        [Fact]
+        public void getListProductHighStock_ReturnValidValue()
+        {
+           using(var context = Fixture.CreateContext())
+           {
+                var repo = new ProductRepository(context, _mapper);
+
+                var data = repo.ProductsWithQuantityGreaterThanFive();
+
+                Assert.DoesNotContain(data, r => r.Stock < 5);
+
+            }
+        }
     }
 }
 

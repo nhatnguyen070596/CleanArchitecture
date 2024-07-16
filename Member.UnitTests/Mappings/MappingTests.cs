@@ -42,4 +42,3 @@ namespace Member.UnitTests.Mappings
         }
     }
 }
-

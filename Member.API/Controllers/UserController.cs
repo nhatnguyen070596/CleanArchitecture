@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Member.API.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class UserController : ControllerBase
     {
 
@@ -21,7 +22,6 @@ namespace Member.API.Controllers
             this.userService = UserService;
         }
         // GET: api/values
-        [HttpGet]
         [HttpGet]
         public ActionResult<List<ProductResponse>> GetUsers()
         {
@@ -54,12 +54,13 @@ namespace Member.API.Controllers
         {
             try
             {
-                var product = this.userService.UpdateUser(id, request);
-                return Ok(product);
+                var user = this.userService.UpdateUser(id, request);
+                return Ok(user);
             }
-            catch (NotFoundException)
+            catch (NotFoundException ex)
             {
-                return NotFound();
+                var errorMessage = ex.Message;
+                return NotFound(errorMessage);
             }
         }
 

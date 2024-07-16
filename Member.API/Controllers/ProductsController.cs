@@ -24,6 +24,12 @@ namespace Member.API.Controllers
             return Ok(this.productService.GetProducts());
         }
 
+        [HttpGet]
+        public ActionResult<List<ProductResponse>> ProductsWithQuantityGreaterThanFive()
+        {
+            return Ok(this.productService.ProductsWithQuantityGreaterThanFive());
+        }
+
         [HttpGet("{id}")]
         public ActionResult GetProductById(int id)
         {

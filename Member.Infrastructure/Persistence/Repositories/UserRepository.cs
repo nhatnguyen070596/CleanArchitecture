@@ -76,7 +76,7 @@ namespace Member.Infrastructure.Persistence.Repositories
                 return this.mapper.Map<UserResponse>(user);
             }
 
-            throw new NotFoundException();
+            throw new NotFoundException("User was not found");
         }
     }
 }

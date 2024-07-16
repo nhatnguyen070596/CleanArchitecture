@@ -7,78 +7,75 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../usr/local/share/dotnet/sdk/8.0.101/Microsoft.Common.CurrentVersion.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Member.UnitTests/Mappings/MappingTests.cs">
     <Files>
-      <File FileName="Member.API/Program.cs" Line="84" Column="1" />
-      <File FileName="Member.API/appsettings.json" />
-      <File FileName="Member.Infrastructure/DependencyInjection.cs" />
-      <File FileName="Member.Domain/Mappings/GeneralProfile.cs" />
-      <File FileName="Member.Domain/Exceptions/NotFoundException.cs" />
-      <File FileName="Member.Application‘/Services/Interface/IProductServices.cs" />
-      <File FileName="Member.API/Controllers/ProductsController.cs" />
-      <File FileName="Member.Application‘/Reponsitories/Interface/IProductRepository.cs" />
+      <File FileName="Member.API/Program.cs" Line="99" Column="22" />
+      <File FileName="Member.API/appsettings.json" Line="8" Column="1" />
+      <File FileName="Member.Infrastructure/DependencyInjection.cs" Line="1" Column="1" />
+      <File FileName="Member.Domain/Mappings/GeneralProfile.cs" Line="30" Column="19" />
+      <File FileName="Member.Domain/Exceptions/NotFoundException.cs" Line="1" Column="1" />
+      <File FileName="Member.Application‘/Services/Interface/IProductServices.cs" Line="1" Column="1" />
+      <File FileName="Member.API/Controllers/ProductsController.cs" Line="21" Column="18" />
+      <File FileName="Member.Application‘/Reponsitories/Interface/IProductRepository.cs" Line="10" Column="25" />
       <File FileName="Member.Infrastructure/Migrations/20240124081134_initial.cs" />
       <File FileName="Member.Infrastructure/Migrations/20240124081134_initial.Designer.cs" />
       <File FileName="Member.API/appsettings.Development.json" />
       <File FileName="Member.Infrastructure/Migrations/StoreContextModelSnapshot.cs" />
-      <File FileName="Member.Domain/Utils/DateUtil.cs" />
+      <File FileName="Member.Domain/Utils/DateUtil.cs" Line="13" Column="1" />
       <File FileName="../../.microsoft/usersecrets/15898e90-8013-4de4-9669-15b526dfd0ec/secrets.json" />
       <File FileName="../../.microsoft/usersecrets/ca2b4953-2c6f-4ca6-8425-7f14e632895d/secrets.json" />
-      <File FileName="Member.UnitTests/DTOs/DateUtilTests.cs" />
-      <File FileName="Member.UnitTests/Mappings/MappingTests.cs" />
-      <File FileName="Member.UnitTests/Utils/BaseTest.cs" />
-      <File FileName="Member.UnitTests/Utils/ProductRequestTests.cs" />
+      <File FileName="Member.UnitTests/DTOs/DateUtilTests.cs" Line="15" Column="54" />
+      <File FileName="Member.UnitTests/Mappings/MappingTests.cs" Line="43" Column="6" />
+      <File FileName="Member.UnitTests/Utils/BaseTest.cs" Line="1" Column="1" />
+      <File FileName="Member.UnitTests/Utils/ProductRequestTests.cs" Line="15" Column="31" />
       <File FileName="Member.UnitTests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-      <File FileName="Member.IntegrationTests/SharedDatabaseFixture.cs" />
-      <File FileName="Member.IntegrationTests/Repositories/ProductRepositoryTests.cs" />
-      <File FileName="Member.Domain/DTOs/Product.cs" />
-      <File FileName="Member.Domain/Entities/Product.cs" />
-      <File FileName="Member.IntegrationTests/GlobalUsings.cs" />
-      <File FileName="Member.IntegrationTests/Member.IntegrationTests.csproj" />
-      <File FileName="Member.UnitTests/GlobalUsings.cs" />
-      <File FileName="Member.Domain/Entities/User.cs" />
-      <File FileName="Member.Domain/DTOs/User.cs" />
-      <File FileName="Member.API/Controllers/UserController.cs" />
-      <File FileName="Member.Infrastructure/Persistence/Repositories/UserRepository.cs" />
-      <File FileName="Member.Application‘/Reponsitories/Interface/IUserRepository.cs" />
-      <File FileName="Member.Application‘/Services/UserServices.cs" Line="1" Column="1" />
-      <File FileName="Member.Application‘/Services/Interface/IUserServices.cs" />
+      <File FileName="Member.IntegrationTests/SharedDatabaseFixture.cs" Line="1" Column="1" />
+      <File FileName="Member.IntegrationTests/Repositories/ProductRepositoryTests.cs" Line="128" Column="1" />
+      <File FileName="Member.Domain/DTOs/Product.cs" Line="10" Column="34" />
+      <File FileName="Member.IntegrationTests/GlobalUsings.cs" Line="1" Column="1" />
+      <File FileName="Member.IntegrationTests/Member.IntegrationTests.csproj" Line="1" Column="1" />
+      <File FileName="Member.UnitTests/GlobalUsings.cs" Line="1" Column="1" />
+      <File FileName="Member.Domain/Entities/User.cs" Line="7" Column="15" />
+      <File FileName="Member.API/Controllers/UserController.cs" Line="8" Column="32" />
+      <File FileName="Member.Infrastructure/Persistence/Repositories/UserRepository.cs" Line="24" Column="1" />
+      <File FileName="Member.Application‘/Reponsitories/Interface/IUserRepository.cs" Line="16" Column="6" />
+      <File FileName="Member.Application‘/Services/UserServices.cs" Line="22" Column="1" />
+      <File FileName="Member.Application‘/Services/Interface/IUserServices.cs" Line="2" Column="26" />
       <File FileName="Member.Infrastructure/Migrations/20240702080614_initial1.cs" />
-      <File FileName="Member.Infrastructure/Migrations/20240702080614_initial1.Designer.cs" />
-      <File FileName="Member.Application‘/Services/ProductServices.cs" Line="16" Column="45" />
+      <File FileName="Member.Application‘/Services/ProductServices.cs" Line="42" Column="56" />
       <File FileName="Member.API/Member.API.csproj" />
       <File FileName="Member.Infrastructure/Member.Infrastructure.csproj" />
       <File FileName="../../../../usr/local/share/dotnet/sdk/8.0.101/Microsoft.Common.CurrentVersion.targets" Line="1860" Column="5" />
-      <File FileName="Member.Infrastructure/Persistence/Repositories/ProductRepository.cs" />
-      <File FileName="Member.Infrastructure/Persistence/Contexts/StoreContext.cs" />
-      <File FileName="Member.API/Controllers/AccountController.cs" />
+      <File FileName="Member.Infrastructure/Persistence/Repositories/ProductRepository.cs" Line="25" Column="49" />
+      <File FileName="Member.Infrastructure/Persistence/Contexts/StoreContext.cs" Line="1" Column="1" />
+      <File FileName="Member.API/Controllers/AccountController.cs" Line="105" Column="1" />
       <File FileName="Member.Domain/DependencyInjection.cs" />
-      <File FileName="Member.Domain/DTOs/IdentityUser.cs" Line="17" Column="1" />
-      <File FileName="Member.API/Helper/SeedUserAdmin.cs" />
-      <File FileName="Member.Application‘/Services/TokenService.cs" Line="10" Column="2" />
-      <File FileName="Member.Application‘/Services/Interface/ITokenServices.cs" />
+      <File FileName="Member.Domain/DTOs/IdentityUser.cs" Line="13" Column="1" />
+      <File FileName="Member.API/Helper/SeedUserAdmin.cs" Line="48" Column="14" />
       <File FileName="Member.Application‘/Member.Application.csproj" Line="1" Column="1" />
+      <File FileName="Member.Domain/Mappings/UserProfile..cs" Line="19" Column="22" />
+      <File FileName="Member.Domain/Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="Member.Domain/DTOs/User.cs" Line="28" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="Member.Domain">
-            <Node name="Source" expanded="True">
-              <Node name="Member.API" expanded="True" />
-              <Node name="Member.Application" selected="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="ProjectDependencies" expanded="True" />
+            <Node name="Test" expanded="True">
+              <Node name="Member.IntegrationTests" expanded="True">
+                <Node name="bin" expanded="True">
+                  <Node name="Debug" expanded="True" />
                 </Node>
-                <Node name="Services" expanded="True" />
+                <Node name="obj" expanded="True" />
+                <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Member.Domain">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
+              <Node name="Member.UnitTests" expanded="True">
                 <Node name="DTOs" expanded="True" />
+                <Node name="Mappings" expanded="True">
+                  <Node name="MappingTests.cs" selected="True" />
+                </Node>
+                <Node name="Utils" expanded="True" />
               </Node>
             </Node>
           </Node>

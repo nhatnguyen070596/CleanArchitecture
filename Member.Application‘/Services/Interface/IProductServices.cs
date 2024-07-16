@@ -7,6 +7,8 @@ namespace Member.Application_.Services.Interface
 	{
         List<ProductResponse> GetProducts();
 
+        List<ProductResponse> ProductsWithQuantityGreaterThanFive();
+
         ProductResponse GetProductById(int productId);
 
         void DeleteProductById(int productId);

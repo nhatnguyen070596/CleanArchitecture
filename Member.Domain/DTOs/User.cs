@@ -13,7 +13,7 @@ namespace Member.Domain.DTOs
         public bool IsActive { get; set; } = false;
 
         [Required]
-        [Range(0, 100)]
+        [StringLength(30, MinimumLength = 3)]
         public string Description { get; set; }
 
     }
@@ -21,7 +21,7 @@ namespace Member.Domain.DTOs
     public class UpdateUserRequest : CreateUserRequest
     {
         [Required]
-        [Range(0, 100)]
+        [StringLength(30, MinimumLength = 3)]
         public string Description { get; set; }
     }
 

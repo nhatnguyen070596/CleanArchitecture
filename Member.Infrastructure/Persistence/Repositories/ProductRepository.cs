@@ -62,6 +62,12 @@ namespace Member.Infrastructure.Persistence.Repositories
             return this.storeContext.Products.Select(p => this.mapper.Map<ProductResponse>(p)).ToList();
         }
 
+        public List<ProductResponse> ProductsWithQuantityGreaterThanFive()
+        {
+            return this.storeContext.Products.Where(r => r.Stock > 5)
+                .Select(p => this.mapper.Map<ProductResponse>(p)).ToList();
+        }
+
         public ProductResponse UpdateProduct(int productId, UpdateProductRequest request)
         {
             var product = this.storeContext.Products.Find(productId);
